@@ -61,4 +61,16 @@ app.get("/articles", function(req, res) {
 });
 
 
+app.delete("/delete-articles", function (req, res) {
+
+  // db.Article.deleteMany(req.params.noteId, (err, note) => {
+  //     if (err) return res.status(500).send(err);
+  //     return res.status(200).send();
+  // });
+
+});
+
+
+
+
 };
