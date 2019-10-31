@@ -4,7 +4,7 @@ const db = require("../models");
 const axios = require("axios");
 
 
-
+module.exports = function(app){
 // A GET route for scraping the echoJS website
 app.get("/scrape", function(req, res) {
     // First, we grab the body of the html with axios
@@ -41,3 +41,4 @@ app.get("/scrape", function(req, res) {
       res.send("Scrape Complete");
     });
   });
+};
