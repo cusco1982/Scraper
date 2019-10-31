@@ -28,9 +28,8 @@ require("./routes/htmlRoutes")(app);
 require("./routes/apiRoutes")(app);
 
 
-
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
-
+// process.env.MONGODB_URI || 
+var MONGODB_URI = "mongodb://localhost/mongoHeadlines";
 mongoose.connect(MONGODB_URI);
 
 app.listen(PORT, function() {
