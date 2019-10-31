@@ -2,8 +2,6 @@ require('dotenv').config();
 const express = require("express");
 // const ehbs = require('express-handlebars');
 const mongoose = require("mongoose");
-const cheerio = require("cheerio");
-const axios = require('axios');
 
 // var logger = require("morgan");
 // const request = require("request");
