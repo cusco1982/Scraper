@@ -1,3 +1,10 @@
+const request = require("request");
+const cheerio = require("cheerio");
+const db = require("../models");
+const axios = require("axios");
+
+
+
 // A GET route for scraping the echoJS website
 app.get("/scrape", function(req, res) {
     // First, we grab the body of the html with axios
