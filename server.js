@@ -1,6 +1,11 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cheerio = require("cheerio");
+require('dotenv').config();
+
+
+
+var PORT = process.env.PORT || 8080;
 
 
 
